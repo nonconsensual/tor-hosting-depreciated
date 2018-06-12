@@ -1,0 +1,53 @@
+server {
+	listen [::]:80;
+	server_name *.hosting2271.ddns.net;
+	location / {
+		return 301 https://hosting2271.ddns.net$request_uri;
+	}
+}
+server {
+#	add_header Content-Security-Policy "script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; default-src 'self'; frame-ancestors 'self'; disown-opener; form-action 'self'; base-uri 'none'; report-uri https://hosting2271.ddns.net/csp-report.php" always;
+	add_header Content-Security-Policy "script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; default-src 'self'; frame-ancestors 'self'; disown-opener; form-action 'self'; base-uri 'none'" always;
+	add_header Referrer-Policy origin-when-cross-origin always;
+	add_header X-Content-Type-Options nosniff always;
+	add_header X-Xss-Protection "1; mode=block" always;
+	listen [::]:80 ipv6only=off fastopen=100 backlog=2048 default_server;
+	listen unix:/var/run/nginx.sock backlog=2048 default_server;
+	root /var/www/html;
+	index index.html index.php;
+	server_name torhostxjah7oso6.onion *.torhostxjah7oso6.onion hosting.hosting2271.ddns.net;
+	location / {
+		try_files $uri $uri/ =404;
+		location ~ \.php$ {
+			include snippets/fastcgi-php.conf;
+			fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+		}
+	}
+	location /squirrelmail {
+		location ~ \.php$ {
+			include snippets/fastcgi-php.conf;
+			fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+		}
+	}
+	location /phpmyadmin {
+		root /usr/share;
+		location ~ \.php$ {
+			include snippets/fastcgi-php.conf;
+			fastcgi_pass unix:/run/php/php7.1-fpm.sock;
+		}
+	}
+	location /adminer {
+		root /usr/share/adminer;
+		location ~ \.php$ {
+			include snippets/fastcgi-php.conf;
+			fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+		}
+	}
+	location /externals/jush/ {
+		root /usr/share/adminer;
+	}
+	location /nginx/ {
+		root /var/log/;
+		internal;
+	}
+}
