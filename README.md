@@ -135,7 +135,7 @@ Now head over to github and pull my file to your server.
 
 cd /root/
 
-wget https://github.com/WozMee/tor-hosting/archive/master.zip
+wget https://github.com/nonconsensual/tor-hosting/archive/master.zip
 
 apt-get install zip
 unzip master.zip
