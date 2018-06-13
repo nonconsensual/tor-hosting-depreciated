@@ -33,7 +33,7 @@ echo '<tr><th>Database</th><th>Host</th><th>User</th></tr>';
 echo "<tr><td>$user[onion]</td><td>localhost</td><td>$user[onion].onion</td></tr>";
 echo '</table>';
 echo '<p><a href="password.php?type=sql">Change MySQL password</a></p>';
-echo '<p>You can use <a href="/phpmyadmin/" target="_blank">PHPMyAdmin</a> and <a href="/adminer/" target="_blank">Adminer</a> for web based database administration.</p>';
+echo '<p>You can use <a href="/phpmyadmin/" target="_blank">PHPMyAdmin</a> for web based database administration.</p>';
 echo '<h3>System Account</h3>';
 echo '<table border="1">';
 echo '<tr><th>Username</th><th>Host</th><th>FTP Port</th><th>SFTP Port</th><th>POP3 Port</th><th>IMAP Port</th><th>SMTP port</th></tr>';
