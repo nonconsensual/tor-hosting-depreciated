@@ -56,7 +56,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <!DOCTYPE html><html><head>
 <title>WowMee's Hosting - Delete account</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="author" content="WowMee TheGreat">
+<meta name="author" content="WowMee">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head><body>
 <p>This will delete your account and all data asociated with it. It can't be un-done. Are you sure?</p>

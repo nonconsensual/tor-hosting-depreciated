@@ -14,7 +14,7 @@ if(!empty($_SESSION['hosting_username'])){
 echo '<!DOCTYPE html><html><head>';
 echo '<title>Wowmee\'s Hosting - Register</title>';
 echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
-echo '<meta name="author" content="Wowmee TheGreat">';
+echo '<meta name="author" content="Wowmee">';
 echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 echo "<!DOCTYPE html>\n";
 echo "<html>\n";

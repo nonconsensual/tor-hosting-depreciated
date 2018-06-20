@@ -257,7 +257,7 @@ $dir=htmlspecialchars($dir);
 <!DOCTYPE html>
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="author" content="Wowmee TheGreat">
+<meta name="author" content="Wowmee">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wowmee's Hosting - FileManager - Index of <?php echo $dir; ?></title>
 <style type="text/css">.list td:nth-child(3){word-break:break-all;} .list td:nth-child(5){text-align:right;} .list tr{height:28px;}

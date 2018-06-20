@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD']==='HEAD'){
 echo '<!DOCTYPE html><html><head>';
 echo '<title>Wowmee\'s Hosting - Login</title>';
 echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
-echo '<meta name="author" content="Wowmee TheGreat">';
+echo '<meta name="author" content="Wowmee">';
 echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 echo '</head><body>';
 echo '<h1>Hosting - Admin panel</h1>';

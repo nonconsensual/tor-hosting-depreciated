@@ -41,7 +41,7 @@ header('Content-Type: text/html; charset=UTF-8');
 echo '<!DOCTYPE html><html><head>';
 echo '<title>WowMee\'s Hosting - Change password</title>';
 echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8">';
-echo '<meta name="author" content="WowMee TheGreat">';
+echo '<meta name="author" content="WowMee">';
 echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
 //included new theme start
 echo "<link rel=\"stylesheet\" href=\"/css/st.css\">\n";
