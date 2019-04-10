@@ -63,6 +63,7 @@ sudo apt-get install nano
 sudo apt-get install apt-transport-https lsb-release ca-certificates
 sudo apt-get update
 sudo apt-get install python-software-properties software-properties-common
+sudo apt --fix-broken install python-pycurl python-apt - Ubuntu 18.04 
 
 sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 sudo apt update && sudo apt upgrade
@@ -70,6 +71,7 @@ sudo apt update && sudo apt upgrade
 
 apt-get --no-install-recommends install apt-transport-tor aspell curl dovecot-imapd dovecot-pop3d git haveged hunspell iptables locales-all logrotate mariadb-server nginx-light postfix postfix-mysql php7.0-bcmath php7.0-bz2 php7.0-curl php7.0-dba php7.0-enchant php7.0-fpm php7.0-gd php7.0-gmp php7.0-imap php7.0-json php7.0-mbstring php7.0-mcrypt php7.0-mysql php7.0-opcache php7.0-pspell php7.0-readline php7.0-recode php7.0-soap php7.0-sqlite3 php7.0-tidy php7.0-xml php7.0-xmlrpc php7.0-xsl php7.0-zip php7.1-bcmath php7.1-bz2 php7.1-cli php7.1-curl php7.1-dba php7.1-enchant php7.1-fpm php7.1-gd php7.1-gmp php7.1-imap php7.1-intl php7.1-json php7.1-mbstring php7.1-mcrypt php7.1-mysql php7.1-opcache php7.1-pspell php7.1-readline php7.1-recode php7.1-soap php7.1-sqlite3 php7.1-tidy php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip php7.2-bcmath php7.2-bz2 php7.2-cli php7.2-curl php7.2-dba php7.2-enchant php7.2-fpm php7.2-gd php7.2-gmp php7.2-imap php7.2-intl php7.2-json php7.2-mbstring php7.2-mysql php7.2-opcache php7.2-pspell php7.2-readline php7.2-recode php7.2-soap php7.2-sqlite3 php7.2-tidy php7.2-xml php7.2-xmlrpc php7.2-xsl php7.2-zip phpmyadmin php-imagick sasl2-bin ssh subversion tor vsftpd
 
+Optional If you want a more secure setup remove phpmyadmin from the list above.
 
 Accept default internet site settings for mail.
 
@@ -79,7 +81,7 @@ Use default server password for myphpadmin when setting up, (your server root pa
 -----------------------------------------------------------------------------------------
 
 
-Create a mysql user with all permissions for our hosting management: Change the password! CHANGE_TO_YOUR_PASSWORD use root password
+Create a mysql user with all permissions for our hosting management: Change the password! CHANGE_TO_YOUR_PASSWORD 
 ------------------------------------------------------------------------------------------------------------------------------------
 mysql
 
