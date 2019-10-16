@@ -57,11 +57,10 @@ screen
 Now begin installing.
 ---------------------
 sudo apt-get install software-properties-common
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 sudo apt-get install nano
 sudo apt-get install apt-transport-https lsb-release ca-certificates
-sudo apt-get update
+sudo apt update && sudo apt upgrade
 sudo apt-get install python-software-properties software-properties-common
 sudo apt --fix-broken install python-pycurl python-apt - Ubuntu 18.04 
 
