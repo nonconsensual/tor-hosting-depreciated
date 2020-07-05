@@ -305,6 +305,36 @@ Remember to open any ports needed for tor & tor instances web server etc.
 ```
 Optional-
 ----------
+Updates to uprgrade system components 
+Update Tor
+1.) nano /etc/apt/sources.list
+make sure you replace <DISTRIBUTION> with your build example for ubuntu 18.04
+  deb https://deb.torproject.org/torproject.org bionic main
+  deb-src https://deb.torproject.org/torproject.org bionic main
+2. Add the following entries to /etc/apt/sources.list or a new file in /etc/apt/sources.list.d/
+
+   deb https://deb.torproject.org/torproject.org <DISTRIBUTION> main
+   deb-src https://deb.torproject.org/torproject.org <DISTRIBUTION> main
+
+If you want to try experimental packages:
+
+   deb https://deb.torproject.org/torproject.org tor-experimental-0.3.4.x-<DISTRIBUTION> main
+   deb-src https://deb.torproject.org/torproject.org tor-experimental-0.3.4.x-<DISTRIBUTION> main
+
+Or nightly builds:
+
+   deb https://deb.torproject.org/torproject.org tor-nightly-master-<DISTRIBUTION> main
+   deb-src https://deb.torproject.org/torproject.org tor-nightly-master-<DISTRIBUTION> main
+  
+  Then make sure you add the key & install it:
+  wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+  gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
+
+apt-get update && apt-get upgrade
+Keep your locally installed files important! [default=N] - press enter
+
+now type tor -v 
+
 If you wish to create a email server on the system follow this guide. 
 https://workaround.org/ispmail/wheezy/
 
