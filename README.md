@@ -277,6 +277,9 @@ Edit password only as this is all you really need to do.
 Now run the setup script
 -------------------------
 sudo php /var/www/setup.php
+get an error? Error: You need to install and enable the PDO php module
+sudo apt-get install php-mysql
+this will install the PDO module now try bove command again.
 
 Enable systemd timers to regularly run various managing tasks:
 --------------------------------------------------------------
